@@ -9,8 +9,8 @@
 <body>
     <script src="./js5.js"></script>
 
-    <h1>Calculadora</h1>
     <div>
+        <h1>Calculadora</h1>
         <div>
             <label for="primer_numero">Primer numero</label>
             <input type="number" name="primer_numero" id="primer_numero">
@@ -40,5 +40,56 @@
             <button onclick="calcular()">Calcular</button>
         </div>
     </div>
+
+    <div>
+        <h2>Programa imagenes</h2>
+
+        <div>
+            <label for="">Numero imagen</label>
+            <select name="num_img" id="num_img">
+                <option value="Alvaro">Alvaro</option>
+                <option value="Gustavo">Gustavo</option>
+                <option value="Roberto">Roberto</option>
+                <option value="Santiago">Santiago</option>
+                <option value="Santiago Travela">Santiago Travela</option>
+            </select>
+        </div>
+
+        <div>
+            <button onclick="verImagen()">Ver imagen</button>
+        </div>
+
+        <div class="imagen_seleccionada">
+        </div>
+
+    </div>
+
+    <div>
+        <h2>Programa Tabla</h2>
+
+        <div>
+            <label for="tabla">Tabla</label>
+            <select name="tabla" id="tabla">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+            </select>
+        </div>
+
+        <div class="resultado_tabla"></div>
+
+        <div>
+            <button onclick="calcularTabla()">Resultado Tabla</button>
+        </div>
+    </div>
+
+
 </body>
 </html>
