@@ -38,6 +38,8 @@ function calcular(){
     let resultado = document.getElementById("resul");
     resultado.value = divisores(numero);
 
+    console.log(numero);
+
 }
 
 
