@@ -12,7 +12,7 @@
 
     <section class="formulario">
         <div class="form">
-            <p class="form__paragraph">Favor de llenar el formulario</p>
+            <p class="form__paragraph"><h2>Programa calculadora</h2></p>
 
             <div class="form__container">
 
@@ -55,37 +55,7 @@
         </div>
     </section>
 
-    <!-- <div>
-        <h1>Calculadora</h1>
-        <div>
-            <label for="primer_numero">Primer numero</label>
-            <input type="number" name="primer_numero" id="primer_numero" >
-        </div>
-
-        <div>
-            <label for="segundo_numero">Segundo numero</label>
-            <input type="number" name="segundo_numero" id="segundo_numero">
-        </div>
-
-        <div>
-            <label for="primer_numero">Operacion</label>
-            <select name="operacion" id="operacion">
-                <option value="+">+</option>
-                <option value="-">-</option>
-                <option value="*">*</option>
-                <option value="/">/</option>
-            </select>
-        </div>
-
-        <div>
-            <label for="resultado">Resultado</label>
-            <input type="number" name="resultado" id="resultado">
-        </div>
-
-        <div>
-            <button onclick="calcular()">Calcular</button>
-        </div>
-    </div> -->
+   
 
     <section class="formulario">
         <div class="form">
@@ -105,9 +75,7 @@
                     
                 </div>
         
-                <div>
-                    <button onclick="verImagen()" class="form__submit">Ver imagen</button>
-                </div>
+                <input type="submit" value="Ver imagen" onclick="verImagen()" class="form__submit"></input>
         
                 <div class="imagen_container">
                 </div>
@@ -117,32 +85,42 @@
         </div>
     </section>
 
+
+    <section class="formulario">
+        <div class="form">
+            <p class="form__paragraph"><h2>Programa Tabla</h2></p>
+
+            <div class="form__container">
+
+                <div class="form__group">
+                    
+                    <select name="tabla" id="tabla"  class="form__input">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                    </select>
+                    <label for="tabla" class="form__label">Tabla</label>
+                    
+                </div>
+        
+                <div id="resultado_tabla"></div>
+        
+                <input type="submit" onclick="calcularTabla()" class="form__submit" value="Resultado Tabla"></input>
+
+
+                
+            </div>
+        </div>
+    </section>
    
-    <div>
-        <h2>Programa Tabla</h2>
-
-        <div>
-            <label for="tabla">Tabla</label>
-            <select name="tabla" id="tabla">
-                <option value="1">1</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="4">4</option>
-                <option value="5">5</option>
-                <option value="6">6</option>
-                <option value="7">7</option>
-                <option value="8">8</option>
-                <option value="9">9</option>
-                <option value="10">10</option>
-            </select>
-        </div>
-
-        <div id="resultado_tabla"></div>
-
-        <div>
-            <button onclick="calcularTabla()">Resultado Tabla</button>
-        </div>
-    </div>
+ 
 
 
 </body>
