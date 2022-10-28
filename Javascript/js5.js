@@ -28,18 +28,18 @@ function verImagen(){
     let numero_imagen = document.getElementById("num_img").value;
     console.log(numero_imagen);
 
-    let imagen_resultado = document.querySelector(".imagen_seleccionada");
+    let imagen_resultado = document.querySelector(".imagen_container");
     
     if (numero_imagen == "Alvaro"){
-        imagen_resultado.innerHTML = '<img src="./img/alvaro.jpg" alt="Imagen1">';
+        imagen_resultado.innerHTML = '<img src="./img/alvaro.jpg" alt="Imagen1" class="imagen_seleccionada">';
     } else if (numero_imagen == "Gustavo"){
-        imagen_resultado.innerHTML = '<img src="./img/gustavo.jpg" alt="Imagen2">';
+        imagen_resultado.innerHTML = '<img src="./img/gustavo.jpg" alt="Imagen2" class="imagen_seleccionada">';
     } else if (numero_imagen == "Roberto"){
-        imagen_resultado.innerHTML = '<img src="./img/roberto.jpg" alt="Imagen2">';
+        imagen_resultado.innerHTML = '<img src="./img/roberto.jpg" alt="Imagen2" class="imagen_seleccionada">';
     } else if (numero_imagen == "Santiago"){
-        imagen_resultado.innerHTML = '<img src="./img/santiago.jpg" alt="Imagen2">';
+        imagen_resultado.innerHTML = '<img src="./img/santiago.jpg" alt="Imagen2" class="imagen_seleccionada"> ';
     } else if (numero_imagen == "Santiago Travela"){
-        imagen_resultado.innerHTML = '<img src="./img/santiagotravela.jpg" alt="Imagen2">';
+        imagen_resultado.innerHTML = '<img src="./img/santiagotravela.jpg" alt="Imagen2" class="imagen_seleccionada">';
     }
 
     

@@ -55,7 +55,7 @@
         </div>
     </section>
 
-    <div>
+    <!-- <div>
         <h1>Calculadora</h1>
         <div>
             <label for="primer_numero">Primer numero</label>
@@ -85,31 +85,39 @@
         <div>
             <button onclick="calcular()">Calcular</button>
         </div>
-    </div>
+    </div> -->
 
-    <div>
-        <h2>Programa imagenes</h2>
+    <section class="formulario">
+        <div class="form">
+            <p class="form__paragraph"><h2>Programa imagenes</h2></p>
 
-        <div>
-            <label for="">Numero imagen</label>
-            <select name="num_img" id="num_img">
-                <option value="Alvaro">Alvaro</option>
-                <option value="Gustavo">Gustavo</option>
-                <option value="Roberto">Roberto</option>
-                <option value="Santiago">Santiago</option>
-                <option value="Santiago Travela">Santiago Travela</option>
-            </select>
+            <div class="form__container">
+
+                <div class="form__group">
+                    <select name="num_img" id="num_img" class="form__input">
+                        <option value="Alvaro">Alvaro</option>
+                        <option value="Gustavo">Gustavo</option>
+                        <option value="Roberto">Roberto</option>
+                        <option value="Santiago">Santiago</option>
+                        <option value="Santiago Travela">Santiago Travela</option>
+                    </select>
+                    <label for="" class="form__label">Numero imagen</label>
+                    
+                </div>
+        
+                <div>
+                    <button onclick="verImagen()" class="form__submit">Ver imagen</button>
+                </div>
+        
+                <div class="imagen_container">
+                </div>
+
+                
+            </div>
         </div>
+    </section>
 
-        <div>
-            <button onclick="verImagen()">Ver imagen</button>
-        </div>
-
-        <div class="imagen_seleccionada">
-        </div>
-
-    </div>
-
+   
     <div>
         <h2>Programa Tabla</h2>
 
